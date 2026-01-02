@@ -1,5 +1,5 @@
 # Example
-```
+```bash
 uni-typing [filePath] [initialDelay] [charDelay]
 ```
 # Tips
