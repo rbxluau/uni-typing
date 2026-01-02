@@ -7,8 +7,8 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     string filePath = argc > 1 ? argv[1] : "";
-    string initialDelay = argc > 2 ? argv[2] : "3000";
-    string charDelay = argc > 3 ? argv[3] : "0";
+    int initialDelay = argc > 2 ? stoi(argv[2]) : 3000;
+    int charDelay = argc > 3 ? stoi(argv[3]) : 0;
     ifstream file(filePath);
     stringstream stream;
     stream << file.rdbuf();
@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     INPUT inputs[2]{};
     size_t sent = 1;
     size_t len = wcslen(unicode);
-    Sleep(stoi(initialDelay));
+    Sleep(initialDelay);
     for (size_t i = 0; i < len; i++)
     {
         inputs[0].type = INPUT_KEYBOARD;
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
         inputs[1].ki.dwFlags = KEYEVENTF_KEYUP;
         SendInput(ARRAYSIZE(inputs), inputs, sizeof(INPUT));
         cout << "\r" << sent++ << "/" << len;
-        Sleep(stoi(charDelay));
+        Sleep(charDelay);
     }
     return 0;
 }
