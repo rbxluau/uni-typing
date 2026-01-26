@@ -1,4 +1,4 @@
-# Uni-Typing
+# uni-typing
 
 An **automatic typing tool** for Windows that reads a text file and simulates keyboard input to type its content automatically. It supports Unicode characters and allows customizable initial and per-character delays.
 
