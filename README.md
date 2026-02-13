@@ -63,4 +63,4 @@ This waits 5 seconds, then types `demo.txt` into whichever window is active, wit
 
 ## License
 
-This project is licensed under the terms in `LICENSE.txt`.
+This project is licensed under the GNU GPL v3 License. See [![license](https://img.shields.io/github/license/rbxluau/uni-typing)](https://github.com/rbxluau/uni-typing/blob/main/LICENSE).
